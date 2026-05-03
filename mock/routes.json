@@ -1,0 +1,3 @@
+{
+  "/api/v1/actions/blueprints/:blueprintId/graph": "/blueprint_graph"
+}
