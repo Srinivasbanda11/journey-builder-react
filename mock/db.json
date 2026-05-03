@@ -1,0 +1,46 @@
+{
+  "blueprint_graph": {
+    "blueprint_id": "bp_01",
+    "forms": [
+      {
+        "id": "form_a",
+        "name": "Form A",
+        "fields": [
+          { "id": "form_a.first_name", "name": "first_name", "label": "First Name" },
+          { "id": "form_a.last_name", "name": "last_name", "label": "Last Name" },
+          { "id": "form_a.email", "name": "email", "label": "Email" }
+        ]
+      },
+      {
+        "id": "form_b",
+        "name": "Form B",
+        "fields": [
+          { "id": "form_b.company", "name": "company", "label": "Company" },
+          { "id": "form_b.phone", "name": "phone", "label": "Phone" }
+        ]
+      },
+      {
+        "id": "form_c",
+        "name": "Form C",
+        "fields": [
+          { "id": "form_c.address", "name": "address", "label": "Address" }
+        ]
+      },
+      {
+        "id": "form_d",
+        "name": "Form D",
+        "fields": [
+          { "id": "form_d.dynamic_checkbox_group", "name": "dynamic_checkbox_group", "label": "Dynamic Checkbox Group" },
+          { "id": "form_d.dynamic_object", "name": "dynamic_object", "label": "Dynamic Object" },
+          { "id": "form_d.email", "name": "email", "label": "Email" }
+        ]
+      }
+    ],
+    "edges": [
+      { "from": "form_a", "to": "form_b" },
+      { "from": "form_a", "to": "form_c" },
+      { "from": "form_b", "to": "form_d" },
+      { "from": "form_c", "to": "form_d" }
+    ]
+  }
+}
